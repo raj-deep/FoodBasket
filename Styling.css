@@ -1,0 +1,278 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* height: 75px;
+    width:100%; */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#navbar > div{
+    margin: 8px 20px;
+
+}
+
+#navbar > div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 74px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+    border-radius: 23px;
+    padding: 8px 8px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.item{
+    list-style: none;
+    font-weight: bold;
+    margin: 23px 23px;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 625px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    background: url('Header_1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* Utility Classes */
+.h-primary{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: 'Lobster', cursive;
+    padding: 12px;
+    color: white;
+}
+
+.h-secondary{
+    font-family: 'Lobster', cursive;
+    font-size: 2.3rem;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.3rem;
+    padding: 6px 3px 0px 3px;
+}
+
+
+.btn{
+    border-radius: 20px;
+    padding: 4px 18px;
+    font-family: 'Lobster', cursive;
+    border: 2px solid white;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(245, 83, 33);
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+#services{
+    display: flex;
+    margin: 34px;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    text-align: center;
+}
+
+.food{
+    display: block;
+    border-radius: 50px;
+    background-color: rgb(227 223 223);
+    width: 24%;
+    margin: 30px 50px;
+    padding: 0px 20px;
+    /* Height: 450px; */
+    border: 2px solid brown;
+}
+
+.food-image{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.food:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* #service-container{
+    height: 660px;
+} */
+
+
+#service-container h1{
+    color: black;
+}
+
+.h-secondary + p{
+    font-family: 'Lobster', cursive;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+
+#clients{
+    position: relative;
+    /* height: 300px; */
+}
+
+#clients::before{
+    content: "";
+    position: absolute;
+    background: url('bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#clients > h1{
+    color: black;
+}
+
+#clients-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-image{
+    width: 100px;
+    height: 100px;
+    margin: 20px 30px;
+    padding: 0px 46px;
+}
+
+#skype{
+    width: 200px;
+}
+
+#contact > h1{
+    color:black;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+justify-content: center;
+padding-bottom: 6px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* #contact{
+    height: 603px;
+} */
+
+form .btn{
+    display: block;
+    margin: auto;
+    background-color: #26241f;
+
+}
+
+#message{
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 12px 23px;
+}
